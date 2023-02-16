@@ -16,29 +16,29 @@ body {
 }
 
 .Monitor {
-	--screen-bezel-color: hsl(39deg 36% 80%);
-	--screen-bezel-color-dark1: hsl(39deg 36% 75%);
-	--screen-bezel-color-dark2: hsl(39deg 36% 70%);
-	--screen-bezel-color-light1: hsl(39deg 36% 85%);
-	--screen-bezel-color-light2: hsl(39deg 36% 90%);
-	--screen-bezel-size: 60px;
-	--screen-outer-chamfer-size: 4px;
-	--screen-inner-chamfer-size: 8px;
-	--screen-outer-corner-radius: 8px;
-	--screen-inner-corner-radius: 8px;
-	--screen-underscan: 20px;
-	--screen-controls-display: flex;
-	--screen-controls-bottom: -46px;
-	--screen-led-display: block;
-	--screen-led-bottom: -40px;
-	--screen-ethernet-status-bottom: -46px;
-	--screen-ethernet-status-display: block;
-	border: solid var(--screen-bezel-size) var(--screen-bezel-color);
-	position: relative;
-	background: #000;
-	-webkit-user-select: none;
-	user-select: none;
-	/* margin: calc(var(--screen-underscan)*-1); */
+  --screen-bezel-color: hsl(39deg 36% 80%);
+  --screen-bezel-color-dark1: hsl(39deg 36% 75%);
+  --screen-bezel-color-dark2: hsl(39deg 36% 70%);
+  --screen-bezel-color-light1: hsl(39deg 36% 85%);
+  --screen-bezel-color-light2: hsl(39deg 36% 90%);
+  --screen-bezel-size: 60px;
+  --screen-outer-chamfer-size: 4px;
+  --screen-inner-chamfer-size: 8px;
+  --screen-outer-corner-radius: 8px;
+  --screen-inner-corner-radius: 8px;
+  --screen-underscan: 20px;
+  --screen-controls-display: flex;
+  --screen-controls-bottom: -46px;
+  --screen-led-display: block;
+  --screen-led-bottom: -40px;
+  --screen-ethernet-status-bottom: -46px;
+  --screen-ethernet-status-display: block;
+  border: solid var(--screen-bezel-size) var(--screen-bezel-color);
+  position: relative;
+  background: #000;
+  -webkit-user-select: none;
+  user-select: none;
+  /* margin: calc(var(--screen-underscan)*-1); */
   /* margin: 0 auto; */
   /* padding: 30px; */
   /* max-height: 70vh; */
@@ -46,32 +46,32 @@ body {
 }
 
 #monitor {
-	width: calc(640px + 2 * var(--screen-underscan));
-	height: calc(480px + 2 * var(--screen-underscan));
+  width: calc(640px + 2 * var(--screen-underscan));
+  height: calc(480px + 2 * var(--screen-underscan));
 }
 
 .Monitor::after {
-	top: calc(var(--screen-inner-chamfer-size)*-1);
-	left: calc(var(--screen-inner-chamfer-size)*-1);
-	right: calc(var(--screen-inner-chamfer-size)*-1);
-	bottom: calc(var(--screen-inner-chamfer-size)*-1);
-	border: solid var(--screen-inner-chamfer-size);
-	border-color: var(--screen-bezel-color-dark2) var(--screen-bezel-color-light2) var(--screen-bezel-color-light1) var(--screen-bezel-color-dark1);
-	border-radius: var(--screen-inner-corner-radius);
+  top: calc(var(--screen-inner-chamfer-size)*-1);
+  left: calc(var(--screen-inner-chamfer-size)*-1);
+  right: calc(var(--screen-inner-chamfer-size)*-1);
+  bottom: calc(var(--screen-inner-chamfer-size)*-1);
+  border: solid var(--screen-inner-chamfer-size);
+  border-color: var(--screen-bezel-color-dark2) var(--screen-bezel-color-light2) var(--screen-bezel-color-light1) var(--screen-bezel-color-dark1);
+  border-radius: var(--screen-inner-corner-radius);
 }
 
 .Monitor::after, .Monitor::before {
-	content: "";
-	position: absolute;
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  pointer-events: none;
 }
 
 .Monitor::before {
-	top: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
-	left: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
-	right: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
-	bottom: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
-	border: solid var(--screen-outer-chamfer-size);
-	border-color: var(--screen-bezel-color-light2) var(--screen-bezel-color-dark2) var(--screen-bezel-color-dark1) var(--screen-bezel-color-light1);
-	border-radius: var(--screen-outer-corner-radius);
+  top: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
+  left: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
+  right: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
+  bottom: calc(var(--screen-bezel-size)*-1 + var(--screen-outer-chamfer-size)*-1);
+  border: solid var(--screen-outer-chamfer-size);
+  border-color: var(--screen-bezel-color-light2) var(--screen-bezel-color-dark2) var(--screen-bezel-color-dark1) var(--screen-bezel-color-light1);
+  border-radius: var(--screen-outer-corner-radius);
 }
