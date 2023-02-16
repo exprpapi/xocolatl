@@ -1,6 +1,7 @@
 *
 !.gitignore
 !README.md
+!screenshot.png
 !Makefile
 !package.json
 !webpack.config.js

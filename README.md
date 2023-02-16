@@ -2,6 +2,8 @@
 
 A RISC-V Assembler and Interpreter.
 
+![](./screenshot.png)
+
 ## Get started
 
 ```bash
