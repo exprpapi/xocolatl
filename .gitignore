@@ -1,8 +1,12 @@
 *
 !.gitignore
 !Makefile
+!package.json
+!webpack.config.js
 !Cargo.toml
 !src
 !src/**
+!web
+!web/**
 !tests
 !tests/**
